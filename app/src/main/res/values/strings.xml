@@ -79,6 +79,7 @@
     <string name="error_invalid_password">Mot de passe trop court</string>
     <string name="error_incorrect_password">Mot de passe incorrecte</string>
     <string name="error_field_required">Champ obligatoire</string>
+    <string name="moreDetails">Voir détails</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>

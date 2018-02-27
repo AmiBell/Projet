@@ -1,305 +1,166 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aspirev.selki.MainFragment">
+    android:background="@color/white"
+    android:paddingTop="60dp"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="160dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        android:background="@color/Vert"
-        android:drawableEnd="@drawable/ic_search_black_24dp"
-        android:drawableRight="@drawable/ic_search_black_24dp"
-        android:text="Chercher un Covoiturage"
-        android:textStyle="bold"
-        android:layout_above="@+id/multiAutoCompleteTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="46dp" />
+        android:weightSum="2">
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:background="@color/griis"
-        android:drawableEnd="@drawable/ic_add_circle_outline_black_24dp"
-        android:drawableRight="@drawable/ic_add_circle_outline_black_24dp"
-        android:text="Proposer un Covoiturage"
-        android:textStyle="bold"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_toRightOf="@+id/button11"
-        android:layout_toEndOf="@+id/button11"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_alignTop="@+id/button11" />
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/multiAutoCompleteTextView"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_marginBottom="62dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:weightSum="2"
-        android:layout_alignTop="@+id/multiAutoCompleteTextView"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout2">
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:drawableLeft="@drawable/dep"
-            android:drawableStart="@drawable/dep"
-            android:weightSum="1"
-            android:text="De:"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_alignBaseline="@+id/editText18"
-            android:layout_alignBottom="@+id/editText18"
-            android:layout_alignLeft="@+id/button11"
-            android:layout_alignStart="@+id/button11" />
-
-        <EditText
-            android:id="@+id/editText18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="USTHB"
-            android:weightSum="1"
-            android:textStyle="bold"
-            android:layout_marginRight="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_alignRight="@+id/button12"
-            android:layout_alignEnd="@+id/button12"
-            android:layout_alignTop="@+id/multiAutoCompleteTextView" />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/linearLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/linearLayout3">
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/editText23"
-            android:layout_alignLeft="@+id/textView18"
-            android:layout_alignStart="@+id/textView18"
-            android:drawableLeft="@drawable/arv"
-            android:drawableStart="@drawable/arv"
-            android:text="Vers: "
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editText19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/editText18"
-            android:layout_alignRight="@+id/editText18"
-            android:layout_below="@+id/editText18"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Alger Centre"
-            android:textStyle="bold" />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/linearLayout3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/linearLayout4">
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Le:"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_alignTop="@+id/editText23"
-            android:layout_alignLeft="@+id/textView19"
-            android:layout_alignStart="@+id/textView19" />
-
-        <EditText
-            android:id="@+id/editText23"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date"
-            android:text="26-12-2018"
-            android:textStyle="bold"
-            android:layout_below="@+id/editText19"
-            android:layout_toRightOf="@+id/textView18"
-            android:layout_toEndOf="@+id/textView18" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView20"
-            android:layout_alignStart="@+id/textView20"
-            android:layout_below="@+id/editText23"
-            android:layout_marginTop="29dp"
-            android:text="Par:"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="à:"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_alignBaseline="@+id/editText23"
-            android:layout_alignBottom="@+id/editText23"
-            android:layout_alignLeft="@+id/button12"
-            android:layout_alignStart="@+id/button12"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp" />
-
-        <EditText
-            android:id="@+id/editText39"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="time"
-            android:text="13:20"
-            android:textStyle="bold"
-            android:layout_below="@+id/editText19"
-            android:layout_alignRight="@+id/editText37"
-            android:layout_alignEnd="@+id/editText37" />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="14dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/linearLayout5">
-
-        <TextView
-            android:id="@+id/textView16"
+        <Button
+            android:id="@+id/button13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Par:"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:text="Chercher un covoiturage"
+            />
 
-        <EditText
-            android:id="@+id/editText24"
+        <Button
+            android:id="@+id/button14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView21"
-            android:layout_alignLeft="@+id/editText23"
-            android:layout_alignStart="@+id/editText23"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Addaa Amel"
-            android:textStyle="bold"
-            android:layout_weight="2.65" />
+            android:layout_weight="1"
 
-
+            android:text="Proposer un covoiturage" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_below="@+id/linearLayout5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Genre"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Heure"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Note"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Prix"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/gris"
+                android:drawableLeft="@drawable/dep"
+                android:drawableStart="@drawable/dep"
+                android:gravity="center"
+                android:text="@string/pt_dep"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                tools:text="USTHB" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/gris"
+                android:drawableLeft="@drawable/arv"
+                android:drawableStart="@drawable/arv"
+                android:gravity="center"
+                android:text="@string/pt_arv"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ALGER"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_alignBaseline="@+id/editText27"
-            android:layout_alignBottom="@+id/editText27"
-            android:layout_alignLeft="@+id/editText19"
-            android:layout_alignStart="@+id/editText19"
-            android:text="Prix:"
-            android:textSize="24sp"
+            android:gravity="center"
+            android:text="Le : 10-12-2018 à 15:00"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryBlue"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/ratingBar4"
-            android:layout_alignEnd="@+id/button12"
-            android:layout_alignRight="@+id/button12"
-            android:layout_marginLeft="13dp"
-            android:layout_marginStart="13dp"
-            android:layout_toRightOf="@+id/textView15"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="100Da" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="@string/moreDetails"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:layout_weight="1.42"/>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="161dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.62" />
+        </LinearLayout>
 
     </LinearLayout>
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/Vert"
-        android:text="Voir plus de dètails"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:layout_alignBottom="@+id/multiAutoCompleteTextView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="16dp" />
-    <RatingBar
-        android:id="@+id/ratingBar4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button17"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 
-</RelativeLayout>
+
+</LinearLayout>
