@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import Activities.AcceuilActivity;
+
 /**
  * Created by lenovo on 26/02/2018.
  */
@@ -25,7 +27,7 @@ public class Connection extends Activity{
         });
     }
     private void goToNextActivity(){
-        Intent intent = new Intent(Connection.this ,Acceuil.class );
+        Intent intent = new Intent(Connection.this , AcceuilActivity.class );
         startActivity(intent);
     }
 }

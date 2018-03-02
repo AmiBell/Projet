@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ChercherCovoiturage extends Fragment {
+public class Contactez_nousFragment extends Fragment {
 
 
-    public ChercherCovoiturage() {
+    public Contactez_nousFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class ChercherCovoiturage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chercher_covoiturage, container, false);
+        return inflater.inflate(R.layout.fragment_contactez_nous, container, false);
     }
 
 }
